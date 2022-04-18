@@ -12,8 +12,8 @@ public class ExerciseThirteen {
         String[] arrayTest = str.split(" ");
 //        1. Выведите слова, состоящие только из латиницы.
         for (String i : arrayTest) {
-            if (i.matches("\\w+")) {
-                if (i.matches("[-+]?\\d+")) {
+            if (i.matches("[a-zA-Z]+\\Z")) {
+                if (i.matches("[^a-zA-Z]+\\Z")) {
                     continue;
                 }
                 System.out.println(i);
